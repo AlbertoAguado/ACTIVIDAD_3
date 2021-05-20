@@ -42,6 +42,18 @@
                     </xsl:for-each>
                 </table>
 
+                <h3>DIRECTOR</h3>
+                <ul>
+                    <li><xsl:value-of select="//director/nombre"/></li>
+                    <li><xsl:value-of select="//director/despacho"/></li>
+                </ul>
+
+                <h3>JEFE DE ESTUDIOS</h3>
+                <ul>
+                    <li><xsl:value-of select="//jefe_estudios/nombre"/></li>
+                    <li><xsl:value-of select="//jefe_estudios/despacho"/></li>
+                </ul>
+
 
                 
 
