@@ -54,6 +54,24 @@
                     <li><xsl:value-of select="//jefe_estudios/despacho"/></li>
                 </ul>
 
+                <form>
+                    <label></label>
+                    <input></input>
+
+                    <label for="contacto">Contactar con:</label>
+                    <select id="contacto" name="contacto">
+                        <option>
+                            <xsl:value-of select="//director/nombre"/>
+                        </option>
+                        <option>
+                            <xsl:value-of select="//jefe_estudios/nombre"/>
+                        </option>
+                        <xsl:for-each select="ite/profesores/profesor"> 
+                            <option><xsl:value-of select="nombre"/></option>                        
+                        </xsl:for-each>
+                    </select>
+
+                </form>
 
                 
 
