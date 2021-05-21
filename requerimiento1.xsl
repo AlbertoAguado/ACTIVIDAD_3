@@ -13,7 +13,22 @@
             </head>
             <body>
                 <h1><xsl:value-of select="$rootElement"/></h1>
-                <h2><xsl:value-of select="//empresa"/></h2>
+                <h2>
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="/ite/@web" />
+                        </xsl:attribute>
+                        <xsl:value-of select="/ite/@nombre"/>
+                    </a>
+                </h2>
+                <h2>
+                    <a>
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="//empresa"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="//empresa"/>
+                    </a>
+                </h2>
                 <h2><xsl:value-of select="//telefono"/></h2>
 
                 <div id="tabla_profesores">
