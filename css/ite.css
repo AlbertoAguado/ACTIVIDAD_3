@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Ramaraja;
+    src: url(Ramaraja-Regular.ttf);
+}
+
+@font-face {
+    font-family: Caladea;
+    src: url(Caladea-Regular.ttf);
+}
+
+* {
+    font-family: Caladea;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Ramaraja;
+    text-transform: uppercase;
+}
+
+
+form {
+    display:flex;
+    flex-direction: column;
+}
