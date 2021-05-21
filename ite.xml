@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<?xml-stylesheet type="text/xsl" href="ite.xsl"?>
+<!-- <?xml-stylesheet type="text/xsl" href="requerimiento1.xsl"?> -->
+<?xml-stylesheet type="text/xsl" href="requerimiento2.xsl"?>
 
 <ite nombre="Instituto Tecnológico Edix" web="https://institutotecnologico.edix.com">
 
