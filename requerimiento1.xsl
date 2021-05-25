@@ -24,7 +24,7 @@
                 <h2>
                     <a>
                         <xsl:attribute name="href">
-                            <xsl:value-of select="//empresa"/>
+                            <xsl:value-of select="concat('http://grupo',//empresa,'.com')"/>
                         </xsl:attribute>
                         <xsl:value-of select="//empresa"/>
                     </a>
@@ -66,17 +66,23 @@
                 </div>
 
                 <h3><xsl:value-of select="name(ite/director)"/></h3>
-                <ul>
-                    <li><xsl:value-of select="//director/nombre"/></li>
-                    <li><xsl:value-of select="//director/despacho"/></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><xsl:value-of select="//director/nombre"/></li>
+                        <li><xsl:value-of select="//director/despacho"/></li>
+                    </ul>
+                </div>
+                
 
                 <h3><xsl:value-of select="name(ite/jefe_estudios)"/></h3>
-                <ul>
-                    <li><xsl:value-of select="//jefe_estudios/nombre"/></li>
-                    <li><xsl:value-of select="//jefe_estudios/despacho"/></li>
-                </ul>
+                <div>
+                    <ul>
+                        <li><xsl:value-of select="//jefe_estudios/nombre"/></li>
+                        <li><xsl:value-of select="//jefe_estudios/despacho"/></li>
+                    </ul>
+                </div>
 
+                <h3>CONTACTO</h3>
                 <form>
                     <div>
                         <label for="fc_nombre">Nombre: </label>
